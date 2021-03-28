@@ -1,0 +1,126 @@
+.silica-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+.silica-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1604086236/pexels-ella-olsson-1458694_enferb.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+}
+.silica-hero-overlay {
+	/* background: #151515;
+	opacity: 0.7; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.silica-hero-info {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #151515;
+	opacity: 0.7;
+	width: 100%;
+	height: 90%;
+}
+.silica-hero-info > h1 {
+	font-size: 5rem;
+}
+.silica-modal-left-div,
+.silica-modal-right-div {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.silica-card-container > p {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	width: 90%;
+	color: #3a5a40 !important;
+}
+.silica-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.silica-modal-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 50px 0px;
+}
+.silica-modal-image {
+	width: 100%;
+	margin: 30px auto;
+	height: auto;
+}
+.silica-modal-table-container {
+	width: 90% !important;
+	margin: 20px auto;
+	border: 2px solid #3a5a40;
+}
+.silica-modal-heading {
+	background-color: #3a5a40 !important;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+.silica-modal-heading > h2 {
+	color: #dad7cd !important;
+	font-size: 2rem !important;
+}
+.silica-list-text > span {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1.2rem !important;
+}
+.silica-table-text,
+.silica-table-text-headings {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+@media only screen and (max-width: 720px) {
+	.silica-modal-image {
+		width: 90%;
+	}
+	.silica-hero-info > h1 {
+		font-size: 2.5rem;
+	}
+	.silica-modal-container {
+		flex-direction: column;
+	}
+	.silica-modal-left-div,
+	.silica-modal-right-div {
+		width: 90%;
+	}
+	.silica-card-container > p {
+		font-size: 1.2rem;
+	}
+}
+@media only screen and (max-width: 1000px) and (min-width: 721px) {
+	.silica-hero-info > h1 {
+		font-size: 2.5rem;
+	}
+	.silica-modal-container {
+		flex-direction: column;
+	}
+	.silica-modal-left-div,
+	.silica-modal-right-div {
+		width: 70%;
+	}
+	.silica-card-container > p {
+		width: 70%;
+	}
+}

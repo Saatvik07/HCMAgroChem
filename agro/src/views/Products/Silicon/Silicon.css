@@ -1,0 +1,124 @@
+.silicon-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+.silicon-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1604086236/pexels-ella-olsson-1458694_enferb.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+}
+.silicon-hero-overlay {
+	background: #151515;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.silicon-hero-info {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+.silicon-hero-info > h1 {
+	font-size: 5rem;
+}
+
+.silicon-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.silicon-modal-container {
+	width: 100%;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.silicon-headline {
+	width: 90%;
+	margin: 30px auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.silicon-headline > h2 {
+	color: #3a5a40;
+}
+.silicon-list-text > span {
+	color: #3a5a40;
+	font-weight: bold;
+}
+.silicon-modal-left-div {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	justify-content: center;
+	align-items: center;
+}
+.silicon-modal-right-div {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	justify-content: center;
+	align-items: center;
+}
+.silicon-modal-image {
+	width: 80%;
+	margin: 30px auto;
+	height: auto;
+}
+.silicon-modal-heading {
+	background-color: #3a5a40 !important;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+.silicon-modal-heading > h2 {
+	color: #dad7cd;
+}
+.silicon-card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+@media only screen and (max-width: 1100px) and (min-width: 721px) {
+	.silicon-modal-container {
+		flex-direction: column;
+		margin-top: 0px;
+	}
+	.silicon-modal-left-div,
+	.silicon-modal-right-div {
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.silicon-hero-info > h1 {
+		font-size: 2.5rem;
+		margin: 20px 0;
+	}
+	.silicon-headline > h2 {
+		font-size: 1rem;
+	}
+	.silicon-modal-container {
+		flex-direction: column;
+		margin-top: 0px;
+	}
+	.silicon-modal-left-div,
+	.silicon-modal-right-div {
+		width: 90%;
+	}
+}

@@ -1,0 +1,128 @@
+.contact-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1599605655/pexels-kaboompics-com-5808_apso79.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50%;
+}
+.contact-hero-overlay {
+	background: #151515;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact-hero-info {
+	color: #dad7cd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+.contact-hero-info > h1 {
+	font-size: 5rem;
+	margin: 75px 0px;
+}
+.contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contact-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #3a5a40;
+}
+.contact-main-left,
+.contact-main-right {
+	width: 50%;
+	color: #dad7cd !important;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact-main-left {
+	background-color: #344e41;
+	padding: 50px 0 50px 0;
+}
+.contact-main-right {
+	background-color: #3a5a40;
+	padding: 61px 0 61px 0;
+}
+.contact-input > label {
+	color: #dad7cd !important;
+}
+.contact-input > div > textarea {
+	color: #dad7cd !important;
+}
+.contact-input > div > fieldset {
+	border-color: #dad7cd !important;
+}
+.contact-input > div > input {
+	color: #dad7cd !important;
+}
+
+.contact-input-container {
+	display: flex;
+}
+.contact-sendBtn {
+	margin: 20px !important;
+	color: #dad7cd !important;
+	border-color: #dad7cd !important;
+}
+.contact-map {
+	width: 99vw;
+	height: 700px;
+}
+.contact-social-container {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 30px;
+}
+.closePrompt-button {
+	font-size: 30px !important;
+	color: #dad7cd;
+}
+.prompt-alert,
+.prompt-success {
+	background: linear-gradient(90deg, #e9ce20 0%, #e60d0a 100%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	color: #dad7cd;
+	width: 100vw;
+}
+.prompt-success {
+	background: linear-gradient(90deg, hsla(140, 73%, 36%, 1) 0%, hsla(152, 85%, 50%, 1) 100%);
+}
+@media only screen and (max-width: 720px) {
+	.contact-main-container {
+		flex-direction: column;
+	}
+	.contact-hero-info > h1 {
+		font-size: 3rem;
+	}
+	.contact-main-left,
+	.contact-main-right {
+		width: 100%;
+	}
+	.contact-main-left {
+		padding: 30px 0;
+	}
+	.get-in-touch-list {
+		width: 90%;
+	}
+	.prompt-alert > h3,
+	.prompt-success > h3 {
+		font-size: 0.8rem;
+	}
+}

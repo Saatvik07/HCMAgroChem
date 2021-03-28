@@ -1,0 +1,157 @@
+.about-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #dad7cd;
+}
+.about-hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+}
+.about-hero-overlay {
+	background: #151515;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.about-card {
+	height: 80vh;
+}
+.about-swiper-container {
+	margin: 50px 0 !important;
+}
+.about-first-overlay {
+	width: 100%;
+	color: #dad7cd;
+	background: #151515;
+	opacity: 0.7;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.about-first-info-container,
+.about-second-info-container,
+.about-third-info-container,
+.about-fourth-info-container {
+	margin: 30px auto;
+	font-size: 1.5rem;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+.about-second-overlay,
+.about-third-overlay,
+.about-fourth-overlay {
+	width: 100%;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+	color: #dad7cd;
+	font-weight: bold;
+	background-color: #151515;
+	opacity: 0.5;
+	text-align: center;
+}
+.about-headings {
+	margin: 50px;
+	font-size: 3rem;
+}
+.about-list-icon {
+	width: 50px;
+	height: auto;
+	margin: 20px;
+}
+.about-second-info-container > p,
+.about-third-info-container > p {
+	font-size: 2rem;
+	text-align: center;
+}
+.about-third-info-container {
+	margin-bottom: 100px;
+}
+.about-list-text > span {
+	font-size: 1.5rem !important;
+	font-weight: bold;
+}
+.about-bg {
+	background-position: top;
+}
+.phone-about-first-list {
+	text-align: center;
+}
+.first-info-container {
+	width: 100%;
+	display: flex;
+	background-color: #ebebeb;
+}
+.first-info-left {
+	background-color: #ebebeb;
+	width: 60%;
+}
+.first-info-left > p {
+	color: #3a5a40;
+	font-size: 1.5rem;
+}
+.info-first-image {
+	width: 30%;
+	height: auto;
+}
+.second-info-container {
+	width: 100%;
+	display: flex;
+	background-color: #fefcfd;
+}
+.second-info-left {
+	background-color: #fefcfd;
+	width: 60%;
+}
+.info-second-image {
+	width: 40%;
+	height: auto;
+}
+@media only screen and (max-width: 720px) {
+	.about-headings {
+		font-size: 2rem;
+		margin: 30px;
+	}
+	.about-first-overlay,
+	.about-hero-overlay {
+		opacity: 0.7;
+	}
+	.about-first-info-container,
+	.about-second-info-container,
+	.about-third-info-container,
+	.about-fourth-info-container {
+		width: 90%;
+		margin: 10px auto;
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	.about-list-text > span {
+		font-size: 1rem !important;
+		font-weight: bold;
+	}
+	.about-second-info-container > p,
+	.about-third-info-container > p {
+		font-size: 1.2rem;
+	}
+	.about-list-icon {
+		width: 40px;
+	}
+	.about-third-info-container {
+		margin-bottom: 50px;
+	}
+}

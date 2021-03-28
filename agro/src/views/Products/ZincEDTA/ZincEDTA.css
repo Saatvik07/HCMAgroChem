@@ -1,0 +1,117 @@
+.zincEDTA-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+.zincEDTA-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1604086236/pexels-ella-olsson-1458694_enferb.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 40%;
+}
+.zincEDTA-hero-overlay {
+	/* background: #151515;
+	opacity: 0.7; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.zincEDTA-hero-info {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #151515;
+	opacity: 0.7;
+	width: 100%;
+	height: 90%;
+}
+.zincEDTA-hero-info > h1 {
+	font-size: 5rem;
+}
+.zincEDTA-modal-left-div,
+.zincEDTA-modal-right-div {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.zincEDTA-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.zincEDTA-modal-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin: 50px 0px;
+}
+.zincEDTA-modal-image {
+	width: 90%;
+	margin: 30px auto;
+	height: auto;
+}
+.zincEDTA-modal-table-container {
+	width: 90% !important;
+	margin: 20px auto;
+	border: 2px solid #3a5a40;
+}
+.zincEDTA-modal-heading {
+	background-color: #3a5a40 !important;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+.zincEDTA-modal-heading > h2 {
+	color: #dad7cd !important;
+	font-size: 1.5rem !important;
+}
+.zincEDTA-accordion {
+	background-color: #3a5a40 !important;
+	color: #dad7cd !important;
+}
+.zincEDTA-list-text > span {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+.zincEDTA-accordion-list-text > span {
+	color: #dad7cd !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+.zincEDTA-table-text,
+.zincEDTA-table-text-headings {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+@media only screen and (max-width: 1100px) and (min-width: 721px) {
+	.zincEDTA-modal-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.zincEDTA-modal-left-div,
+	.zincEDTA-modal-right-div {
+		width: 65%;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.zincEDTA-hero-info > h1 {
+		font-size: 2.5rem;
+	}
+	.zincEDTA-modal-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.zincEDTA-modal-left-div,
+	.zincEDTA-modal-right-div {
+		width: 90%;
+	}
+}

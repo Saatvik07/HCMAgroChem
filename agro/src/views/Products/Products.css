@@ -1,0 +1,122 @@
+.products-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+.products-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1599605655/pexels-kaboompics-com-5808_apso79.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40%;
+}
+.products-hero-overlay {
+	background: #151515;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.products-hero-info {
+	color: #dad7cd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+.products-hero-info > h1 {
+	font-size: 5rem;
+	margin: 75px 0px;
+}
+.products-card-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.products-card {
+	width: 25%;
+	margin: 50px;
+}
+.products-card-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #dad7cd;
+}
+.products-card-expand-icon {
+	font-size: 1rem;
+	color: #dad7cd !important;
+	border-color: #dad7cd !important;
+	margin-top: 20px !important;
+}
+.one {
+	background-color: #588157 !important;
+}
+.two {
+	background-color: #3a5a40 !important;
+}
+.three {
+	background-color: #344e41 !important;
+}
+.products-card-image {
+	width: 100%;
+	height: auto;
+}
+.products-card-footer > button {
+	color: #dad7cd;
+	border: 2px solid #dad7cd;
+	margin: 10px 30px;
+}
+.products-card-footer {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.products-list-text {
+	color: #dad7cd !important;
+}
+@media only screen and (max-width: 550px) {
+	.products-hero-info > h1 {
+		font-size: 3rem;
+		margin: 40px;
+	}
+	.products-card {
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 551px) and (max-width: 680px) {
+	.products-hero-info > h1 {
+		font-size: 3rem;
+		margin: 40px;
+	}
+	.products-card {
+		width: 40%;
+		margin: 50px 20px;
+	}
+}
+@media only screen and (min-width: 680px) and (max-width: 1020px) {
+	.products-hero-info > h1 {
+		font-size: 3rem;
+		margin: 40px;
+	}
+	.products-card {
+		margin: 50px 30px;
+		width: 35%;
+	}
+}
+@media only screen and (min-width: 1020px) and (max-width: 1210px) {
+	.products-hero-info > h1 {
+		font-size: 3rem;
+		margin: 40px;
+	}
+	.products-card {
+		width: 40%;
+	}
+}

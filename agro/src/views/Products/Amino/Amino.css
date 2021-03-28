@@ -1,0 +1,234 @@
+.amino-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+.amino-hero {
+	background: url("https://res.cloudinary.com/maximuscloud/image/upload/v1604086236/pexels-ella-olsson-1458694_enferb.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40%;
+}
+.amino-hero-overlay {
+	background: #151515;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.amino-hero-info {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+.amino-hero-info > h1 {
+	font-size: 5rem;
+}
+.amino-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.amino-card {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #3a5a40 !important;
+	margin: 50px;
+	max-height: 70vh;
+}
+.amino-card-content > p {
+	color: #dad7cd;
+}
+.amino-card-image {
+	width: 100%;
+	height: auto;
+}
+.amino-card-footer {
+	width: 100%;
+	height: 100%;
+	padding: 20px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.amino-card-footer-container {
+	height: 20%;
+	width: 100%;
+}
+.amino-card-button {
+	color: white !important;
+	border: 2px solid white !important;
+}
+.product-dialog-container {
+	background-color: #dad7cd !important;
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.amino-dialog-left-div {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	justify-content: center;
+	align-items: center;
+}
+.amino-dialog-right-div {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	justify-content: center;
+	align-items: center;
+}
+.product-dialog > div > div {
+	max-width: 100% !important;
+}
+body > div.MuiDialog-root.product-dialog > div.MuiDialog-container.MuiDialog-scrollPaper > div {
+	width: 80%;
+	background-color: #dad7cd !important;
+}
+.product-dialog-image {
+	width: 90%;
+}
+.product-dialog-list {
+	width: 85%;
+}
+.amino-modal-heading {
+	background-color: #3a5a40 !important;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+.amino-modal-heading > h2 {
+	color: #dad7cd;
+}
+.amino-list-text > span {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+.amino-list-text-big > span {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1.2rem !important;
+}
+.amino-table-text,
+.amino-table-text-headings {
+	color: #3a5a40 !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+}
+.amino-table-text-headings {
+	font-size: 1.2rem !important;
+}
+.amino-slide-info {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #3a5a40;
+	opacity: 0.9;
+	display: flex;
+	justify-content: center;
+}
+.amino-slide-info > h1,
+.amino-slide-info > h2 {
+	color: #dad7cd;
+}
+.amino-carousel {
+	height: 55vh !important;
+	width: 90% !important;
+	margin: 0 auto;
+}
+.fade {
+	animation-name: fadeAway;
+	animation-duration: 1s;
+}
+@keyfames fadeAway {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.amino-hero-info > h1 {
+		font-size: 1.8rem;
+		margin: 20px;
+	}
+	.amino-card {
+		width: 80%;
+		margin: 20px;
+	}
+	.amino-card-content > p {
+		font-size: 12px !important;
+	}
+	.amino-card-content > h2 {
+		font-size: 16px !important;
+	}
+	.amino-card-footer {
+		padding: 10px !important;
+	}
+	.amino-card-container {
+		margin: 30px 0;
+	}
+}
+@media only screen and (max-width: 875px) {
+	.product-dialog-container {
+		flex-direction: column;
+		margin: 10px 0;
+	}
+	.amino-hero-info > h1 {
+		margin: 30px;
+		text-align: center;
+	}
+	.amino-dialog-left-div,
+	.amino-dialog-right-div {
+		width: 90%;
+		margin: 20px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#dialog
+		> div.MuiDialog-container.MuiDialog-scrollPaper
+		> div
+		> div
+		> div
+		> ul
+		> li
+		> div.MuiListItemText-root
+		> span {
+		font-size: 14px !important;
+	}
+	.amino-card-footer {
+		padding: 10px !important;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 1210px) {
+	.amino-hero-info > h1 {
+		font-size: 2rem;
+		margin: 20px;
+	}
+	.amino-card {
+		width: 40%;
+		margin: 40px 20px;
+	}
+	.amino-card-content > p {
+		font-size: 14px !important;
+	}
+	.amino-card-content > h2 {
+		font-size: 18px !important;
+	}
+}
