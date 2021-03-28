@@ -78,10 +78,11 @@ app.post("/send-reply",(req,res)=>{
     });
     
 })
-app.use(errorHandler());
-if(process.env.NODE_ENV==="production"){
+if(process.env.NODE_ENV === "production"){
     app.use(express.static("agro/build"));
 }
+app.use(errorHandler());
+
 app.listen(PORT,()=>{
     console.log(`Listening to port ${PORT}`);
 })
