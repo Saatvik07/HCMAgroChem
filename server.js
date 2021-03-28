@@ -9,14 +9,15 @@ app.use(cors({ origin: "*", credentials: true }));
 const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(morgan("dev"));
-let transporter = nodeMailer.createTransport({
-    service:"gmail",
-    auth: {
-		user: process.env.EMAIL,
-		pass: process.env.EMAIL_PASSWORD,
-	},
-});
+
 app.post("/send-catalog",(req,res)=>{
+    let transporter = nodeMailer.createTransport({
+        service:"gmail",
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASSWORD,
+        },
+    });
     const email = req.body.email;
     const mailOptions = {
         to: email,
@@ -40,6 +41,13 @@ app.post("/send-catalog",(req,res)=>{
     
 });
 app.post("/send-query",(req,res)=>{
+    let transporter = nodeMailer.createTransport({
+        service:"gmail",
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASSWORD,
+        },
+    });
     const email  = req.body.email;
     const name = req.body.name;
     const query = req.body.query;
@@ -60,6 +68,13 @@ app.post("/send-query",(req,res)=>{
     res.sendStatus(201);
 })
 app.post("/send-reply",(req,res)=>{
+    let transporter = nodeMailer.createTransport({
+        service:"gmail",
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASSWORD,
+        },
+    });
     const email = req.body.email;
     
     const mailOptions = {
