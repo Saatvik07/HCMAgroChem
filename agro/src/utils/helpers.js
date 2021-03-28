@@ -1,4 +1,4 @@
-const baseUrl = "https://hcmagrochem.herokuapp.com"
+
 export const sendCatalogue = (email) =>{
     const fetchOptions = {
         method:"POST",
