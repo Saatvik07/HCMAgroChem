@@ -1,4 +1,4 @@
-const baseUrl = "https://hcmagrochem.herokuapp.com/"
+const baseUrl = "https://hcmagrochem.herokuapp.com"
 export const sendCatalogue = (email) =>{
     const fetchOptions = {
         method:"POST",
@@ -23,9 +23,9 @@ export const sendQuery = (name,email,query) =>{
         },
         body: JSON.stringify({name:name,email:email,query:query})
     }
-    return fetch(`${baseUrl}/send-query`,fetchOptions).then(response =>{
+    return fetch(`send-query`,fetchOptions).then(response =>{
         if(response.ok){
-            return fetch(`${baseUrl}/send-reply`,fetchOptions).then(response2 =>{
+            return fetch(`send-reply`,fetchOptions).then(response2 =>{
                 if(response2.ok){
                     return "message sent";
                 }
