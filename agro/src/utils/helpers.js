@@ -1,10 +1,11 @@
+const baseUrl = "https://hcmagrochem.herokuapp.com/"
 export const sendCatalogue = (email) =>{
     const fetchOptions = {
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify({email:email})
     };
-    return fetch("http://localhost:8080/send-catalog",fetchOptions).then(response=>{
+    return fetch(`${baseUrl}/send-catalog`,fetchOptions).then(response=>{
         if(response.ok){
             return "Catalog sent";
         }
@@ -22,9 +23,9 @@ export const sendQuery = (name,email,query) =>{
         },
         body: JSON.stringify({name:name,email:email,query:query})
     }
-    return fetch("http://localhost:8080/send-query",fetchOptions).then(response =>{
+    return fetch(`${baseUrl}/send-query`,fetchOptions).then(response =>{
         if(response.ok){
-            return fetch("http://localhost:8080/send-reply",fetchOptions).then(response2 =>{
+            return fetch(`${baseUrl}/send-reply`,fetchOptions).then(response2 =>{
                 if(response2.ok){
                     return "message sent";
                 }
