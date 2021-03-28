@@ -5,7 +5,7 @@ export const sendCatalogue = (email) =>{
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify({email:email})
     };
-    return fetch(`${baseUrl}/send-catalog`,fetchOptions).then(response=>{
+    return fetch(`send-catalog`,fetchOptions).then(response=>{
         if(response.ok){
             return "Catalog sent";
         }
