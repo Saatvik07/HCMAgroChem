@@ -16,13 +16,13 @@ import AOS from "aos";
 SwiperCore.use([Navigation, A11y, Autoplay, EffectFade]);
 const tileData = [
 	{
-		image:"https://res.cloudinary.com/maximuscloud/image/upload/v1605050728/Seaweed_granules_yhjcmy.jpg",
+		image:"https://res.cloudinary.com/maximuscloud/image/upload/c_scale,w_4971/v1605050728/Seaweed_granules_yhjcmy.jpg",
 		title:"Seaweed Extract",
 		link:"/seaweed"
 
 	},
 	{
-		image:"https://res.cloudinary.com/maximuscloud/image/upload/v1605189057/Humid_acid_granules_f5u9em.jpg",
+		image:"https://res.cloudinary.com/maximuscloud/image/upload/c_scale,h_3456,w_4971/v1605189057/Humid_acid_granules_f5u9em.jpg",
 		title:"Humic Acid",
 		link:"/humate"
 	},
@@ -32,7 +32,7 @@ const tileData = [
 		link:'/seaweed'
 	},
 	{
-		image:"https://res.cloudinary.com/maximuscloud/image/upload/v1605204111/Super_potassium_FLAKES_lxowoc.jpg",
+		image:"https://res.cloudinary.com/maximuscloud/image/upload/c_scale,h_3456,w_4971/v1605204111/Super_potassium_FLAKES_lxowoc.jpg",
 		title:"Super Potassium Flakes",
 		link:'/products'
 	}
@@ -71,7 +71,6 @@ function Home() {
 			AOS.init();
 			setLoading([false,false]);
 		}
-		console.log(loading);
 	})
 	const responsiveOptions = [
         {
@@ -119,11 +118,7 @@ function Home() {
 				effect='fade'
 				id='first'
 				className='animate__animated animate__fadeIn home-swiper-container'
-				autoplay={{
-					delay: "3000",
-					stopOnLastSlide: false,
-					disableOnInteraction: false,
-				}}
+				autoplay={false}
 				
 			>
 				<SwiperSlide tag='li'>
@@ -296,42 +291,6 @@ function Home() {
 				...
 			</Swiper>
 			<p className="home-best-heading" data-aos='fade-up' data-aos-mirror='true' data-aos-once='false'>Our Bestsellers</p>
-			{/* <GridList className={classes.gridList} cols={2.5}data-aos='fade-up' data-aos-mirror='true' data-aos-once='false'>
-				{tileData.map((tile) => (
-				<GridListTile key={tile.img} className="home-tile">
-					<img src={tile.image} alt={tile.title} />
-					<GridListTileBar
-					title={tile.title}
-					className="home-title-bar"
-					actionIcon={
-						<IconButton aria-label={`star ${tile.title}`}>
-						<OpenInNewIcon  style={{color:"#dad7cd"}}/>
-						</IconButton>
-					}
-					/>
-				</GridListTile>
-				))}
-      	</GridList> */}
-
-			{/* <div className="hex-container" >
-				<div className="upper-hex-container">
-					<div className="hex-image hex1"
-						data-aos='fade-up'
-						data-aos-mirror='true'
-						data-aos-once='false'></div>
-					
-				</div>
-				<div className="lower-hex-container">
-				<div className="hex-image hex2"
-					data-aos='fade-left'
-					data-aos-mirror='true'
-					data-aos-once='false'></div>
-					<div className="hex-image hex3"
-					data-aos='fade-right'
-					data-aos-mirror='true'
-					data-aos-once='false'></div>
-				</div>
-			</div> */}
 			<Carousel
 				value={tileData} numVisible={3} numScroll={1} responsiveOptions={responsiveOptions} circular autoplayInterval={3000} itemTemplate={productTemplate}
 				className="home-carousel"

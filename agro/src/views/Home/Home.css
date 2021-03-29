@@ -17,7 +17,7 @@
 	height: 100vh;
 }
 .navBar {
-	height: 10%;
+	height: 7.5%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -177,8 +177,8 @@ body
 	height: auto;
 }
 .product-image {
-	height: 350px;
-	width: auto;
+	width: 90%;
+	height: 100%;
 }
 .not-loaded {
 	display: none !important;
@@ -300,5 +300,17 @@ body
 	}
 	.home-about-svg {
 		width: 75px;
+	}
+}
+@media only screen and (max-width: 600px) and (min-width: 480px) {
+	/* .product-image {
+		width: 80%;
+		height: auto;
+	} */
+	.product-heading {
+		font-size: 1rem;
+	}
+	.car-buttons > button {
+		font-size: 0.8rem;
 	}
 }

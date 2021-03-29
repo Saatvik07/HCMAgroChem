@@ -38,13 +38,13 @@ footer {
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	z-index: -100;
+	z-index: 100;
 	align-self: flex-end;
 	background-color: #3a5a40;
 }
 .footer-logo {
-	margin: 20px;
-	width: 40%;
+	width: 100%;
+	margin-bottom: 20px;
 	height: auto;
 }
 .footer-left {
@@ -116,11 +116,17 @@ td {
 .footer-input > div > input {
 	color: #dad7cd !important;
 }
-.footer-center-left-bottom,
-.footer-center-left-bottom-phone {
+.footer-center-left-bottom {
 	display: flex;
 	justify-content: space-evenly;
+	width: 85%;
+	margin: 20px 0px;
+	align-items: center;
+}
+.footer-center-left-bottom-phone {
 	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 	margin: 20px 0px;
 	align-items: center;
 }
@@ -175,7 +181,9 @@ input:-webkit-autofill {
 	width: 100%;
 	background: #3a5a40;
 }
-
+.footer-left > a {
+	width: 40%;
+}
 .footer-right-phone {
 	display: flex;
 	width: 50%;
@@ -187,8 +195,11 @@ input:-webkit-autofill {
 	width: 50%;
 }
 .footer-logo-phone {
-	width: 15%;
+	width: 100%;
 	height: auto;
+}
+.footer-bottom > a {
+	width: 15%;
 }
 .footer-right-bottom {
 	margin-top: 20px;

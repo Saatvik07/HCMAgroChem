@@ -78,6 +78,9 @@ function Contact() {
 						</IconButton>
 					</div>);
 				}
+				setName("");
+				setEmail("");
+				setQuery("");
 			});
 		}
 		

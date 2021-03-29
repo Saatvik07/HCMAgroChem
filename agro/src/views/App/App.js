@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link, useHistory } from "react-router-dom";
 import Home from "../Home/Home";
 import Products from "../Products/Products";
 import About from "../About/About";
@@ -23,8 +23,6 @@ import {
 } from "@material-ui/core";
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import Manure from "../Products/Manure/Manure";
-import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
-import TripOriginIcon from "@material-ui/icons/TripOrigin";
 import EmailIcon from "@material-ui/icons/Email";
 import Contact from "../Contact/Contact";
 import Xanthan from "../Products/Xanthan/Xanthan";
@@ -44,9 +42,6 @@ function App() {
 	const [mailLoader, setMailLoader] = useState(false);
 	const [prompt, setPrompt] = useState(null);
 	const matches = useMediaQuery("(max-width:1250px)");
-	useEffect(() => {
-		
-	}, []);
 	const handleSendClick = () =>{
 		setMailLoader(true);
 		setPrompt(<div style={{background:"linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", display:"flex", justifyContent:"space-evenly", alignItems:"center",padding:"20px",color:"#DAD7CD", maxWidth:"100vw"}} className="animate__animated animate__fadeIn">
@@ -86,6 +81,9 @@ function App() {
 		});
 		
 	}
+	useEffect(()=>{
+		setPrompt(null);
+	},[])
 	return (
 		<div className={matches ? "content-footer-phone" : "content-footer"}>
 			<BrowserRouter>
@@ -172,19 +170,22 @@ function App() {
 												setEmail(event.target.value);
 											}}
 										/>
-										<Button variant='outlined' className='footer-sendBtn' onClick={handleSendClick}>
+										{mailLoader? <CircularProgress className="footer-sendBtn"/> :<Button variant='outlined' className='footer-sendBtn' onClick={handleSendClick}>
 											Send
-										</Button>
+										</Button>}
 									
 								</div>
 							</div>
 							<div className='footer-bottom'>
-										<img
-											src='https://res.cloudinary.com/maximuscloud/image/upload/v1604101145/output-onlinepngtools_16_k5noco.png'
-											alt='logo'
-											className='footer-logo-phone'
-										></img>
-										<h5>© 2020 HCM Agro Products Pvt Ltd. All Rights Reserved.</h5>
+								<Link to="/">
+									<img
+										src='https://res.cloudinary.com/maximuscloud/image/upload/v1604101145/output-onlinepngtools_16_k5noco.png'
+										alt='logo'
+										className='footer-logo-phone'
+										
+									></img>
+								</Link>
+								<h5>© 2020 HCM Agro Products Pvt Ltd. All Rights Reserved.</h5>
 							</div>
 						</footer>
 					</>
@@ -193,11 +194,14 @@ function App() {
 						<footer>
 							<div className='footer-container'>
 								<div className='footer-left'>
-									<img
-										src='https://res.cloudinary.com/maximuscloud/image/upload/v1604101145/output-onlinepngtools_16_k5noco.png'
-										alt='logo'
-										className='footer-logo'
-									></img>
+									<Link to="/">
+										<img
+											src='https://res.cloudinary.com/maximuscloud/image/upload/v1604101145/output-onlinepngtools_16_k5noco.png'
+											alt='logo'
+											className='footer-logo'
+											
+										></img>
+									</Link>	
 									<h5>© 2020 HCM Agro Products Pvt Ltd. All Rights Reserved.</h5>
 								</div>
 								<div className='footer-center'>
