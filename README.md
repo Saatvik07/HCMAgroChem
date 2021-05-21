@@ -1,4 +1,5 @@
 ## <a href="https://hcmagrochem.herokuapp.com" target="_blank">Visit</a> the website 
+### P.S. It might take a few seconds to load
 
 ## Screens
 
